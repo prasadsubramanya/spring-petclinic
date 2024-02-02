@@ -5,8 +5,8 @@ node()
     }
 
     stage("Welcome"){
-        def userInput = input(id: 'userInput', message: 'Enter name',parameters: [string(defaultValue: 'None',name: 'Name')])
-        echo "${userinput}"
+        env.userInput = input(id: 'userInput', message: 'Enter name',parameters: [string(defaultValue: 'None',name: 'Name')])
+        echo "${env.userInput}"
     }
 
 
