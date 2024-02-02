@@ -1,8 +1,7 @@
 node()
 {
-    stage("Test Message")
-    {
-        echo "Hi"
+    stage('Checkout'){
+        checkout scm
     }
 
 
