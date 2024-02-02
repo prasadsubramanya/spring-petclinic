@@ -4,5 +4,9 @@ node()
         checkout scm
     }
 
+    stage("Welcome"){
+        echo "Hi"
+    }
+
 
 }
