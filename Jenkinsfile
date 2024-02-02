@@ -5,7 +5,7 @@ node()
     }
 
     stage("Welcome"){
-        echo "Hi"
+        def input_date = input id: 'Name', message: 'enter name'
     }
 
 
