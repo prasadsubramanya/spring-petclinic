@@ -5,7 +5,7 @@ node()
     }
 
     stage("Welcome"){
-        def input_date = input id: 'Name', message: 'enter name'
+        def userInput = input(id: 'userInput', message: 'Enter name',parameters: [string(defaultValue: 'None',name: 'Config')])
     }
 
 
