@@ -1,6 +1,4 @@
-parameters {
-        string(name: 'Name', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-}
+properties([parameters([string('Name')])])
 node()
 {
     stage('Checkout'){
